@@ -6,7 +6,7 @@ const error = document.getElementById("error")
 
 todoButton.addEventListener("click", () => {
 
-   const dos = todoInput.value          //stores input in this new variable
+   const dos = todoInput.value.trim();          //stores input in this new variable
 
    //handling Empty input
     if( dos === "") {
@@ -14,20 +14,22 @@ todoButton.addEventListener("click", () => {
         error.style.display = "block";
 
         error.textContent = "Can't be empty";
+        return;
     } else {
         error.style.display = "none";
     }
+    
 
 
     if(dos !== ""){
 
-        const activityList = document.createElement("li"); //creates new element and sets it to whatever the user types
+        const activityList = document.createElement("li"); //creates new list element and sets it to whatever the user types
 
         activityList.innerText = dos;
 
 
-        const deleteTodo = document.createElement("button");
-
+        const deleteTodo = document.createElement("button");        //Creates new button element
+ 
         deleteTodo.innerHTML = "Remove"
         //deleteTodo.innerText = deleteTodo
 
@@ -40,9 +42,11 @@ todoButton.addEventListener("click", () => {
         });
 
 
+        //Attach elements
         activityList.appendChild(deleteTodo);
-
         todoList.appendChild(activityList);
+
+        //clear input
         todoInput.value = "";
 
 
