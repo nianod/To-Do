@@ -48,6 +48,22 @@ input:focus {
 #error {
     color: red;
 }
+li {
+    font-size: 1.2rem;
+    font-family: helvetica;
+    font-weight: 540;
+    margin-top: 5px; 
+    text-transform: capitalize;
+    border: 1px solid black;
+    background: rgb(216, 214, 214);
+    align-items: center;
+    gap: 6rem;
+    border-radius: 3px;
+    border-style: none;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
 button {
     background: red;
     border: none;
@@ -58,7 +74,6 @@ button {
     margin-left: 0.5rem;
     cursor: pointer;
     color: white;
-    margin-top: 10px;
 }
 button:hover {
     background: rgb(252, 37, 37);
