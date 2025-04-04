@@ -32,7 +32,7 @@ input {
 input:focus {
     outline: transparent;
 }
-button {
+#subit-todo {
     margin-top: 10px;
     width: 3rem;
     height: 2em;
@@ -41,10 +41,25 @@ button {
     border: none;
     border-radius: 5px;
 }
-button:hover {
+#subit-todo:hover {
     cursor: pointer;
     background-color: rgb(4, 166, 4);
 }
 #error {
     color: red;
+}
+button {
+    background: red;
+    border: none;
+    border: 5px;
+    width: 4rem;
+    padding: 2px;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+button:hover {
+    background: rgb(252, 37, 37);
 }
