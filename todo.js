@@ -6,10 +6,13 @@ const error = document.getElementById("error")
 
 todoButton.addEventListener("click", () => {
 
-    const activity = todoInput.value;
+ 
+    if(todoInput.value === "") {
 
-    if(activity = "") {
         error.style.display = "block";
-        error.textContent = "Can't be empty"
+
+        error.textContent = "Can't be empty";
+    } else {
+        error.style.display = "none";
     }
 })

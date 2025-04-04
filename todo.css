@@ -45,3 +45,6 @@ button:hover {
     cursor: pointer;
     background-color: rgb(4, 166, 4);
 }
+#error {
+    color: red;
+}
