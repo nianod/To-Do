@@ -22,8 +22,18 @@ todoButton.addEventListener("click", () => {
         const activityList = document.createElement("li");
         todoInput.innerHTML = dos;
 
-        const deleteTodo = document.createElement("")
+        const deleteTodo = document.createElement("button")
+        deleteTodo.textContent = "X"
+        deleteTodo.innerHTML = deleteTodo
 
+        deleteTodo.classList.add("delete");
+        deleteTodo.addEventListener("click", () => {
+            activityList.remove()
+        });
+
+        activityList.appendChild(deleteTodo);
+        todoList.appendChild(activityList);
+        todoInput.value = "";
 
     }
 
