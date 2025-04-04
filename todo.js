@@ -6,8 +6,8 @@ const error = document.getElementById("error")
 
 todoButton.addEventListener("click", () => {
 
- 
-    if(todoInput.value === "") {
+    const dos = todoInput.value
+    if( dos === "") {
 
         error.style.display = "block";
 
@@ -15,4 +15,18 @@ todoButton.addEventListener("click", () => {
     } else {
         error.style.display = "none";
     }
+
+
+    if(todoInput !== ""){
+
+        const activityList = document.createElement("li");
+        todoInput.innerHTML = dos;
+
+        const deleteTodo = document.createElement("")
+
+
+    }
+
+
 })
+
