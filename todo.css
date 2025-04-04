@@ -7,7 +7,7 @@ body {
     background: rgba(172, 172, 172, 0.315);
 }
 .box {
-    border: 1px solid black;
+    border: 1px black;
     padding: 2rem;
     width: 50%; 
     display: flex;
@@ -15,7 +15,6 @@ body {
     margin: 10px auto;
     background: white;
     align-items: center;
-     border-style: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
     border-radius: 4px;
 }
@@ -38,7 +37,6 @@ input:focus {
     height: 2em;
     background: green;
     color: white;
-    border: none;
     border-radius: 5px;
 }
 #subit-todo:hover {
@@ -49,25 +47,18 @@ input:focus {
     color: red;
 }
 li {
-    font-size: 1.2rem;
     font-family: helvetica;
     font-weight: 540;
     margin-top: 5px; 
     text-transform: capitalize;
-    border: 1px solid black;
     background: rgb(216, 214, 214);
-    align-items: center;
-    gap: 6rem;
+    margin: 10px auto;
     border-radius: 3px;
-    border-style: none;
     padding: 2px;
-    display: flex;
-    justify-content: center;
 }
 button {
     background: red;
     border: none;
-    border: 5px;
     width: 4rem;
     padding: 2px;
     border-radius: 4px;
