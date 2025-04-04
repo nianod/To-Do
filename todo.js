@@ -20,20 +20,30 @@ todoButton.addEventListener("click", () => {
     if(dos !== ""){
 
         const activityList = document.createElement("li");
+
         activityList.innerText = dos;
 
-        const deleteTodo = document.createElement("button")
+
+        const deleteTodo = document.createElement("button");
+
         deleteTodo.innerHTML = "Remove"
         //deleteTodo.innerText = deleteTodo
 
         deleteTodo.classList.add("delete");
+
         deleteTodo.addEventListener("click", () => {
             activityList.remove()
+
+
         });
 
+
         activityList.appendChild(deleteTodo);
+        
         todoList.appendChild(activityList);
         todoInput.value = "";
+
+
 
     }
 
