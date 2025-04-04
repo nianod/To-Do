@@ -6,7 +6,9 @@ const error = document.getElementById("error")
 
 todoButton.addEventListener("click", () => {
 
-   const dos = todoInput.value
+   const dos = todoInput.value          //stores input in this new variable
+
+   //handling Empty input
     if( dos === "") {
 
         error.style.display = "block";
@@ -19,7 +21,7 @@ todoButton.addEventListener("click", () => {
 
     if(dos !== ""){
 
-        const activityList = document.createElement("li");
+        const activityList = document.createElement("li"); //creates new element and sets it to whatever the user types
 
         activityList.innerText = dos;
 
@@ -39,7 +41,7 @@ todoButton.addEventListener("click", () => {
 
 
         activityList.appendChild(deleteTodo);
-        
+
         todoList.appendChild(activityList);
         todoInput.value = "";
 
