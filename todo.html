@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-Do-List</title>
     <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="switch-mode" id="mode">
+        <i style="position: relative; left: 50%; right: 50%; bottom: 5%;" class="fa-solid fa-lightbulb"></i>
+    </div>
+    <style>
+        i{
+            cursor: pointer;
+        }
+        body .modeColor {
+            background: black;
+        }
+        body .modeColor i {
+            color: white;
+        }
+        body .modeColor h2 {
+            color: black;
+        }
+    </style>
+
     <div class="box">
         <h2>To-do List</h2>
         <input type="text" placeholder="Write your to-do here" id="todo-Input">

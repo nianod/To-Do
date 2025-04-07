@@ -50,7 +50,6 @@ todoButton.addEventListener("click", () => {
         todoInput.value = "";
 
 
-
     }
 
 
