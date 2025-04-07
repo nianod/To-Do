@@ -55,3 +55,12 @@ todoButton.addEventListener("click", () => {
 
 })
 
+const switchMode = document.getElementById("mode");
+
+switchMode.addEventListener("click", () => {
+    
+    
+
+    document.body.classList.toggle("modeColor")
+
+})

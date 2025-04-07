@@ -6,26 +6,25 @@
     <title>TO-Do-List</title>
     <link rel="stylesheet" href="todo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
-    <div class="switch-mode" id="mode">
-        <i style="position: relative; left: 50%; right: 50%; bottom: 5%;" class="fa-solid fa-lightbulb"></i>
-    </div>
     <style>
         i{
             cursor: pointer;
         }
-        body .modeColor {
+        body.modeColor {
             background: black;
         }
-        body .modeColor i {
+        body.modeColor i {
             color: white;
         }
-        body .modeColor h2 {
-            color: black;
+        body.modeColor .box {
+            background: rgb(250, 248, 248);
         }
     </style>
-
+</head>
+<body>
+    <div class="switch-mode">
+        <i  id="mode" style="position: relative; left: 50%; right: 50%; bottom: 5%;" class="fa-solid fa-lightbulb"></i>
+    </div>
     <div class="box">
         <h2>To-do List</h2>
         <input type="text" placeholder="Write your to-do here" id="todo-Input">
